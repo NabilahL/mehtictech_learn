@@ -44,6 +44,7 @@ function App() {
               </a>
             ))}
           </div>
+          
         )}
       </nav>
       <div className="bg-gray-200 w-full min-h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex flex-col sm:flex-row items-center justify-between px-4 py-6">
