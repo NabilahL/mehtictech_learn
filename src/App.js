@@ -35,7 +35,7 @@ function App() {
         </div>
         {isOpen && (
           <div className="sm:hidden px-2 pt-2 pb-3 space-y-1 ">
-            {['Home', 'About', 'Services', 'Contact'].map((link) => (
+            {['Home', 'About', 'Services', 'ContactUs'].map((link) => (
               <a
                 key={link}
                 href="#"
@@ -44,33 +44,68 @@ function App() {
               </a>
             ))}
           </div>
-          
+
         )}
       </nav>
+
       <div className="bg-gray-200 w-full min-h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex flex-col sm:flex-row items-center justify-between px-4 py-6">
         <div>
-        <span className="font-bold text-[32px] sm:text-[40px] text-left sm:mr-4 flex-1 text-center text-[#A9008F]">
-          Unlock Smarter Financial, Management Tailored For You
-        </span>
-        <p className='text-[#00000]'>Navigate Your Financial Future with confidence.Our solutions making managing money easier</p>
+          <span className="font-bold text-[32px] sm:text-[40px] text-left sm:mr-4 flex-1 text-center text-[#A9008F]">
+            Unlock Smarter Financial, Management Tailored For You
+          </span>
+          <p className='text-[#00000]'>Navigate Your Financial Future with confidence.Our solutions making managing money easier</p>
+          <button className='text-[#ffffff] bg-[#A9008F] mt-8 border rounded-md px-6 py-1 '>Contact Us</button>
         </div>
         <img className="w-full sm:w-[50%] md:w-[50%] lg:w-[50%] h-auto mt-4 sm:mt-0" src={pic1} alt="Financial Management" />
       </div>
 
-
-      <div className='bg-[#000000] mt-4 sm:mt-8 md:mt-12 lg:mt-14 text-white'>
-        <div>
-        <span className="text-2xl  font-bold  flex items-center space-x-2">
-            <img src={mehticlogo} />
-            Mehtic Technology
-            </span>
-            <p>We are a tech company offering expert technical support,quality service,fast implementation, and proven success in delivering innovative solutions for African businessess in Africa</p>
-        </div>
       
+      <div className='bg-[#000000] mt-8 sm:mt-10 md:mt-12 lg:mt-14 text-white flex flex-col lg:flex-row'>
+
+        <div className='flex flex-col items-start text-left w-full mt-8 lg:w-1/3 space-y-4'>
+          <span className="text-2xl font-bold flex items-center space-x-2">
+            <img src={mehticlogo} alt="Mehtic Logo" />
+            Mehtic Technology
+          </span>
+          <p className='text-sm sm:text-base md:text-lg lg:text-xl'>
+            We are a tech company offering expert technical support, quality service, fast implementation, and proven success in delivering innovative solutions for African businesses in Africa.
+          </p>
+        </div>
+
+        <div className='flex flex-row sm:flex-row lg:flex-row mt-8 lg:w-2/3 lg:ml-8 space-y-8 space-x-8 sm:space-x-4 lg:space-x-0 sm:space-y-0 justify-between'>
+
+        
+          <div className='flex flex-col space-y-4 w-full'>
+            <div className="text-lg">Products</div>
+            <p>MehticPay</p>
+            <p>BankPlus</p>
+            <p>BankPlusPrime</p>
+          </div>
+
+    
+          <div className='flex flex-col space-y-4 w-full'>
+            <div className="text-lg">Navigation</div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Career</p>
+          </div>
+
+       
+          <div className='flex flex-col space-y-4 w-full'>
+            <div className="text-lg ">Help & Support</div>
+            <p>Contact Us</p>
+            <p>Terms of use</p>
+            <p>Privacy Policy</p>
+          </div>
+
+        </div>
+
       </div>
-      <div>
-        hi
-      </div>
+
+
+
+
+
     </>
   );
 }
