@@ -59,7 +59,7 @@ function App() {
         <img className="w-full sm:w-[50%] md:w-[50%] lg:w-[50%] h-auto mt-4 sm:mt-0" src={pic1} alt="Financial Management" />
       </div>
 
-      
+
       <div className='bg-[#000000] mt-8 sm:mt-10 md:mt-12 lg:mt-14 text-white flex flex-col lg:flex-row'>
 
         <div className='flex flex-col items-start text-left w-full mt-8 lg:w-1/3 space-y-4'>
@@ -72,33 +72,40 @@ function App() {
           </p>
         </div>
 
-        <div className='flex flex-row sm:flex-row lg:flex-row mt-8 lg:w-2/3 lg:ml-8 space-y-8 space-x-8 sm:space-x-4 lg:space-x-0 sm:space-y-0 justify-between'>
+        <div className='flex flex-row mt-10 lg:w-2/4 lg:ml-auto space-x-8'>
 
         
-          <div className='flex flex-col space-y-4 w-full'>
-            <div className="text-lg">Products</div>
-            <p>MehticPay</p>
-            <p>BankPlus</p>
-            <p>BankPlusPrime</p>
+          <div className='flex flex-col items-start space-y-2 w-full'>
+            <h2 className="text-lg font-bold">Products</h2>
+            <div className="flex flex-col space-y-1">
+              <p>MehticPay</p>
+              <p>BankPlus</p>
+              <p>BankPlusPrime</p>
+            </div>
           </div>
 
-    
-          <div className='flex flex-col space-y-4 w-full'>
-            <div className="text-lg">Navigation</div>
-            <p>Home</p>
-            <p>About</p>
-            <p>Career</p>
+         
+          <div className='flex flex-col items-start space-y-2 w-full'>
+            <h2 className="text-lg font-bold">Navigation</h2>
+            <div className="flex flex-col space-y-1">
+              <p>Home</p>
+              <p>About</p>
+              <p>Career</p>
+            </div>
           </div>
 
-       
-          <div className='flex flex-col space-y-4 w-full'>
-            <div className="text-lg ">Help & Support</div>
-            <p>Contact Us</p>
-            <p>Terms of use</p>
-            <p>Privacy Policy</p>
+         
+          <div className='flex flex-col items-start space-y-2 w-full'>
+            <h2 className="text-lg font-bold">Help & Support</h2>
+            <div className="flex flex-col space-y-1">
+              <p>Contact Us</p>
+              <p>Terms of use</p>
+              <p>Privacy Policy</p>
+            </div>
           </div>
 
         </div>
+
 
       </div>
 
